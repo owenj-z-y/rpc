@@ -20,28 +20,51 @@ README.md: Project documentation file (includes project overview, installation i
 autobuild.sh: Automated build script (simplifies the build and compilation process)
 
 1.the translation for setting up the protobuf environment on Ubuntu:
+
   Download the project: You can either download it from the project’s official download link or from the GitHub source code repository: https://github.com/google/protobuf.
+  
   In the source package, the src/README.md file contains detailed installation instructions. The installation process is as follows:
+  
   Extract the compressed file:
+  
   unzip protobuf-master.zip
+  
   Enter the extracted directory:
+  
   cd protobuf-master
+  
   Install required tools:
+  
   sudo apt-get install autoconf automake libtool curl make g++ unzip
+  
   Automatically generate the configure file:
+  
   ./autogen.sh
+  
   Configure the environment:
+  
   ./configure
+  
   Compile the source code (this may take some time):
+  
   make
+  
   Install:
+  
   sudo make install
+  
   Refresh the dynamic library cache:
+  
   sudo ldconfig
+  
 2.Zookeeper is widely used in distributed environments and offers many excellent features, such as global naming services, service registry, and global distributed locks in distributed environments.
+
   Zookeeper Data Organization - Znode Nodes
+  
   syntax = "proto3";
+  
   package fixbug;
+  
   option cc_generic_services = true;
   
   message LoginRequest {
@@ -76,6 +99,7 @@ autobuild.sh: Automated build script (simplifies the build and compilation proce
   Zookeeper's Watcher Mechanism
   
   1.Download the zookeeper-3.4.10.tar.gz file from the project documentation, and extract it.
+  
   2.In the extracted directory:
   
      zookeeper-3.4.10$ cd conf
@@ -85,7 +109,6 @@ autobuild.sh: Automated build script (simplifies the build and compilation proce
   3.Go to the bin directory and start zkServer:
   
      ./zkServer.sh start
-  
   
   4.You can use netstat to check the port of zkServer. In the bin directory, start zkClient.sh to connect to zkServer and familiarize yourself with how Zookeeper organizes nodes.
   
@@ -100,4 +123,5 @@ autobuild.sh: Automated build script (simplifies the build and compilation proce
      sudo ./configure
      sudo make
      sudo make install
+     
 3.muduo and boost install
