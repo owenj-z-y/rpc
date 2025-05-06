@@ -2,13 +2,21 @@
 rpc：vscode and Ubuntu
 
 bin: Executable files (compiled project files)
+
 build: Project build files (files generated during compilation)
+
 lib: Project library files (static or dynamic libraries)
+
 src: Source code files (core logic of the project)
+
 test: Test code (unit tests or integration tests to ensure code quality)
+
 example: Example usage code (helps users understand how to use the framework or library)
+
 CMakeLists.txt: Top-level CMake configuration file (defines build process, source files, library files, etc.)
+
 README.md: Project documentation file (includes project overview, installation instructions, usage guidelines, contribution info, etc.)
+
 autobuild.sh: Automated build script (simplifies the build and compilation process)
 
 1.the translation for setting up the protobuf environment on Ubuntu:
